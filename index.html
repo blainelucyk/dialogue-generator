@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blaine and Trae's Dialogue Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Blaine and Trae's Dialogue Generator</h1>
+        
+        <div class="character-section">
+            <div class="character">
+                <h2>Character 1</h2>
+                <div class="input-section">
+                    <label for="dialogue1">Dialogue:</label>
+                    <textarea id="dialogue1" rows="4" placeholder="Type character 1's dialogue here..."></textarea>
+                </div>
+
+                <div class="voice-section">
+                    <label for="voice-select1">Voice:</label>
+                    <select id="voice-select1">
+                        <!-- Voice options will be populated by JavaScript -->
+                    </select>
+                </div>
+            </div>
+
+            <div class="character">
+                <h2>Character 2</h2>
+                <div class="input-section">
+                    <label for="dialogue2">Dialogue:</label>
+                    <textarea id="dialogue2" rows="4" placeholder="Type character 2's dialogue here..."></textarea>
+                </div>
+
+                <div class="voice-section">
+                    <label for="voice-select2">Voice:</label>
+                    <select id="voice-select2">
+                        <!-- Voice options will be populated by JavaScript -->
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="emotion-section">
+            <label>Emotion Control:</label>
+            <div class="emotion-sliders">
+                <div class="slider-group">
+                    <label for="stability">Stability:</label>
+                    <input type="range" id="stability" min="0" max="1" step="0.1" value="0.5">
+                    <span id="stability-value">0.5</span>
+                </div>
+                <div class="slider-group">
+                    <label for="similarity">Similarity:</label>
+                    <input type="range" id="similarity" min="0" max="1" step="0.1" value="0.75">
+                    <span id="similarity-value">0.75</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-section">
+            <button id="generate-btn">Generate Audio</button>
+            <button id="play-btn" disabled>Play</button>
+            <button id="save-btn" disabled>Save</button>
+        </div>
+
+        <div class="status-section">
+            <p id="status-message"></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
