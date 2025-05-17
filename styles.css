@@ -153,3 +153,61 @@ button:disabled {
     color: #666;
     font-style: italic;
 }
+
+.help-section {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border: 1px solid #e9ecef;
+}
+
+details {
+    padding: 1rem;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: #2c3e50;
+    user-select: none;
+}
+
+summary:hover {
+    color: #3498db;
+}
+
+.help-content {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.help-content h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.help-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.help-content ul ul {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.help-content li {
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+}
+
+.help-content li:last-child {
+    margin-bottom: 0;
+}
+
+.help-content strong {
+    color: #2c3e50;
+}
